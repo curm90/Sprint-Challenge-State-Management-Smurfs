@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const Smurf = ({ error, smurf }) => {
-  debugger;
   return (
     <div>
       {error ? (
