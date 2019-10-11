@@ -2,27 +2,100 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header {
+  margin: 1rem 0;
+  font-size: 3.2rem;
+  box-shadow: 5px 5px 5px #bdbdbd;
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.header__text {
+  font-size: 2.2rem;
+  margin: 4rem 0 0 0;
+}
+
+.form-container {
+  height: 20vh;
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 4rem 0 4rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+input {
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background: #f4f7fd;
+  transition: ease-in-out 0.1s;
+}
+
+input:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.1s;
+}
+
+.button {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background: #3457ef;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px #1b2f84;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.1s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.1s;
+  box-shadow: 0px 4px 10px #1b2f84;
+}
+
+.button--remove {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  background: red;
+}
+
+.smurf-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.smurf {
+  margin: 3rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #5079f4;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 4px 4px 5px #324a93;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.smurf__header {
+  font-size: 2rem;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.smurf__details {
+  font-size: 1.6rem;
 }
