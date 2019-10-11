@@ -19,8 +19,8 @@ const SmurfsForm = ({ postSmurfData }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={onFormSubmit}>
+    <div className='form-container'>
+      <form className='form' onSubmit={onFormSubmit}>
         <input
           onChange={onInputChange}
           value={formValues.name}
@@ -42,7 +42,7 @@ const SmurfsForm = ({ postSmurfData }) => {
           name='height'
           placeholder='Height'
         />
-        <button>Add Smurf</button>
+        <button className='button button__add-smurf'>Add Smurf</button>
       </form>
     </div>
   );

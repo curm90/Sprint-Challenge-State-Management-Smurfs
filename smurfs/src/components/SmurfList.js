@@ -2,9 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Smurf from './Smurf';
 
-const SmurfList = ({ smurfsData }) => {
+const SmurfList = ({ smurfsData, isFetching }) => {
   return (
-    <div>
+    <div className='smurf-container'>
+      {isFetching && <p>Loading...</p>}
       {smurfsData.map(smurf => (
         <Smurf key={smurf.name} smurf={smurf} />
       ))}

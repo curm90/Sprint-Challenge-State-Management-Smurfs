@@ -4,18 +4,23 @@ import { deleteSmurf } from '../actions';
 
 const Smurf = ({ error, smurf, deleteSmurf }) => {
   return (
-    <div>
+    <>
       {error ? (
         <p>{error}</p>
       ) : (
-        <div>
-          <h2>{smurf.name}</h2>
-          <p>Age: {smurf.age}</p>
-          <p>Height: {smurf.height}</p>
-          <button onClick={() => deleteSmurf(smurf.id)}>Delete</button>
+        <div className='smurf'>
+          <h2 className='smurf__header'>{smurf.name}</h2>
+          <p className='smurf__details'>Age: {smurf.age}</p>
+          <p className='smurf__details'>Height: {smurf.height}cm</p>
+          <button
+            className='button button--remove'
+            onClick={() => deleteSmurf(smurf.id)}
+          >
+            Delete
+          </button>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

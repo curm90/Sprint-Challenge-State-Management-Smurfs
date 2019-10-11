@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  background: #eff3ff;
 }
